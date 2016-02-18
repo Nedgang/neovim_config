@@ -77,6 +77,7 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'tpope/vim-speeddating'
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
+                Plug 'vim-airline/vim-airline-themes'
         " vim tabularize
                 Plug 'godlygeek/tabular'
         " vim snippets
@@ -145,7 +146,7 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 set noshowmode
 "to fix the font and lot of strange characters and colors
-let g:airline_theme='wombat'
+let g:airline_theme='dark'
 set encoding=utf-8
 set t_Co=256
 "set fillchars+=stl:\ ,stlnc:\
