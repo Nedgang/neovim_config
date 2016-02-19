@@ -92,7 +92,15 @@ call plug#begin('~/.config/nvim/bundle/')
         " tagbar
                 Plug 'majutsushi/tagbar'
         " Vimproc
-                Plug 'Shougo/vimproc.vim'
+                Plug 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
         " nerdTree, activated on command
                 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
