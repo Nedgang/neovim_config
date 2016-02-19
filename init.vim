@@ -91,7 +91,10 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'airblade/vim-gitgutter'
         " tagbar
                 Plug 'majutsushi/tagbar'
-                nmap <F8> :TagbarToggle<CR>
+        " Vimproc
+                Plug 'Shougo/vimproc.vim'
+        " nerdTree
+                Plug 'scrooloose/nerdtree'
 
 " Configuration indent line
 let g:indentLine_char = '|'
@@ -113,6 +116,8 @@ filetype plugin indent on
 """""""""
 " VIMRC "
 """""""""
+" set tagbar shortcut
+nmap <F8> :TagbarToggle<CR>
 "set colorscheme
 colorscheme vividchalk
 " pour que l'indentation avec tab soit la même qu'avec les chevrons
