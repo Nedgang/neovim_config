@@ -93,8 +93,8 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'majutsushi/tagbar'
         " Vimproc
                 Plug 'Shougo/vimproc.vim'
-        " nerdTree
-                Plug 'scrooloose/nerdtree'
+        " nerdTree, activated on command
+                Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Configuration indent line
 let g:indentLine_char = '|'
