@@ -59,15 +59,7 @@ call plug#begin('~/.config/nvim/bundle/')
         " . repeat whole maps
 		Plug 'tpope/vim-repeat'
         " necessary for efficiency Unite, with options for automatize compilation
-		Plug 'Shougo/vimproc.vim', {
-                        \ 'build' : {
-                        \     'windows' : 'tools\\update-dll-mingw',
-                        \     'cygwin' : 'make -f make_cygwin.mak',
-                        \     'mac' : 'make -f make_mac.mak',
-                        \     'linux' : 'make',
-                        \     'unix' : 'gmake',
-                        \    },
-                        \ }
+		Plug 'Shougo/vimproc.vim', { 'do': 'make' }
         " powerful finder of whatever you want
 		Plug 'Shougo/unite.vim'
                 Plug 'bronson/vim-visual-star-search'
@@ -91,18 +83,8 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'airblade/vim-gitgutter'
         " tagbar
                 Plug 'majutsushi/tagbar'
-        " Vimproc
-                Plug 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
         " nerdTree, activated on command
-                Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+                Plug 'scrooloose/nerdtree'
 
 " Configuration indent line
 let g:indentLine_char = '|'
