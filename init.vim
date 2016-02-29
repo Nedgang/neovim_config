@@ -94,14 +94,7 @@ call plug#end()
 " Required:
 filetype plugin indent on
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-"PlugUpdate
-
-
-" neobundle initialization terminated
 " vimrc begin here
-
 
 """""""""
 " VIMRC "
@@ -127,7 +120,6 @@ set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 " Details
 set nomodeline          " security about modelines
-"set cm=blowfish         " Encryption : use of Blofish algorithm
 set mouse=a             " mouse for all modes
 set pastetoggle=<F10>   " Use <F10> to toggle between 'paste' and 'nopaste'
 set wildmenu            " Better command-line completion
@@ -144,7 +136,6 @@ set noshowmode
 let g:airline_theme='dark'
 set encoding=utf-8
 set t_Co=256
-"set fillchars+=stl:\ ,stlnc:\
 
 " session manager have the default comportement, except that is not save the
 " local and global mappings/options.
@@ -221,10 +212,6 @@ endif
 
 " remappages importants
 let mapleader = ","
-" bépo transcription
-"if !empty(system("setxkbmap -print|grep bepo"))
-"       source ~/.vimrc.bepo
-"endif
 
 "Abbréviations d'ordre générales
 ab actual source ~/.vimrc
@@ -380,5 +367,4 @@ map <leader>lda <plug>(vimtex-ad)
 map <leader>ldi <plug>(vimtex-id)
 map <leader>lpa <plug>(vimtex-ap)
 map <leader>lpi <plug>(vimtex-ip)
-
 
