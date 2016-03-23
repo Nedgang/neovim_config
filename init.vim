@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'aluriak/asp.vim'
         " Rust support
                 Plug 'rust-lang/rust.vim'
+        " TOML support
+                Plug 'cespare/vim-toml'
         " Ada support
 		Plug 'ada.vim'
         " markdown support
