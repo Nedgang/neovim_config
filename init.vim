@@ -20,6 +20,8 @@ call plug#begin('~/.config/nvim/bundle/')
 		Plug 'mndrix/prolog.vim'
         " ASP support
                 Plug 'aluriak/asp.vim'
+        " Rust support
+                Plug 'rust-lang/rust.vim'
         " Ada support
 		Plug 'ada.vim'
         " markdown support
