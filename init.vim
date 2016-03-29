@@ -34,6 +34,8 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'hynek/vim-python-pep8-indent'
         " latex
                 Plug 'lervag/vimtex'
+        " SPARQL
+                Plug 'Omer/vim-sparql'
 " features
         " liste des fonctions/variables
 		Plug 'taglist.vim'
