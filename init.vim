@@ -36,6 +36,8 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'lervag/vimtex'
         " SPARQL
                 Plug 'Omer/vim-sparql'
+        " Snakemake
+                Plug 'ibab/vim-snakemake'
 " features
         " liste des fonctions/variables
 		Plug 'taglist.vim'
