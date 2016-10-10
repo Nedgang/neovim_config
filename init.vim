@@ -254,6 +254,7 @@ au BufNewFile,BufRead *.mkd setf mkd
 au BufNewFile,BufRead *.adb setf ada*/
 au BufNewFile,BufRead *.ads setf ada*/
 au BufNewFile,BufRead *.py  setf python 
+au BufNewFile,BufRead *.rs  setf rust
 au BufNewFile,BufRead *.tex set encoding=utf-8
 au BufNewFile,BufRead *.rb set shiftwidth=2
 au BufNewFile,BufRead {M,m}akefile set noexpandtab
@@ -333,8 +334,11 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup vimrc_autocmds
         autocmd!
         autocmd FileType python highlight Excess guibg=Green ctermbg=Grey
-        autocmd FileType python match Excess /\%80v.*/
+        autocmd FileType python match Excess /\%81v.*/
         autocmd FileType python set nowrap
+        autocmd FileType rust highlight Excess guibg=Green ctermbg=Grey
+        autocmd FileType rust match Excess /\%81v.*/
+        autocmd FileType rust set nowrap
 augroup END
 
 " Enable heavy omni completion.
