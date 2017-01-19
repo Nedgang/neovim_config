@@ -334,10 +334,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup vimrc_autocmds
         autocmd!
         autocmd FileType python highlight Excess guibg=Green ctermbg=Grey
-        autocmd FileType python match Excess /\%81v.*/
+        autocmd FileType python match Excess /\%80v.*/
         autocmd FileType python set nowrap
         autocmd FileType rust highlight Excess guibg=Green ctermbg=Grey
-        autocmd FileType rust match Excess /\%81v.*/
+        autocmd FileType rust match Excess /\%80v.*/
         autocmd FileType rust set nowrap
 augroup END
 
