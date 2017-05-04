@@ -220,7 +220,7 @@ if has('conceal')
         set conceallevel=2 concealcursor=i
 endif
 
-" remappages importants
+" Touche leader
 let mapleader = ","
 
 "Abbréviations d'ordre générales
@@ -366,7 +366,6 @@ let g:vimtex_syntax_minted = [
       \ { 'lang' : 'cpp', },
       \ { 'lang' : 'python', },
       \]
-map <leader>ll <plug>(vimtex-compile-toggle)
 map <leader>ls <plug>(vimtex-view)
 map <leader>la <plug>(vimtex-%)
 map <leader>lu <plug>(vimtex-create-cmd)
