@@ -10,10 +10,14 @@ endif
 " Required:
 call plug#begin('~/.config/nvim/bundle/')
 
+" Live actualisation
+if has("autocmd")
+    autocmd! bufwritepost .vimrc source ~/.vimrc
+endif
+
 
 " MY BUNDLES HERE :
 " Refer to |:Plug-examples|.
-" Indentation
 
 " Languages forge
         " prolog support
@@ -24,8 +28,6 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'rust-lang/rust.vim'
         " TOML support
                 Plug 'cespare/vim-toml'
-        " Ada support
-		Plug 'ada.vim'
         " markdown support
                 Plug 'tpope/vim-markdown'
         " python
@@ -40,7 +42,7 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'ibab/vim-snakemake'
 " features
         " liste des fonctions/variables
-		Plug 'taglist.vim'
+		Plug 'vim-scripts/taglist.vim'
         " powerful file explorator (need unite)
 		Plug 'Shougo/vimfiler.vim'
         " commenter des portions de code à la volée
