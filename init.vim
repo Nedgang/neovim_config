@@ -347,10 +347,6 @@ let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_force_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
-" Delete ~/.vim/.netrwhist file after generation
-au VimLeave * if filereadable("~/.vim/.netrwhist") | call delete("~/.vim/.netrwhist") | endif 
-
-
 " setup: vimtex
 let g:vimtex_mappings_enabled = 0
 let g:vimtex_latexmk_background = 1
