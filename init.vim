@@ -246,9 +246,6 @@ noremap <F9> :VimShellInteractive make<cr>
 " paste (before|after) and leave cursor at the beginning 
 noremap œ P`[
 noremap Œ p`[
-" write only one character (before|after) cursor [DONT WORK ?]
-noremap <leader>i i?<Esc>h 
-noremap <leader>a a?<Esc>h 
 
 " Modif selon type de fichier
 filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
@@ -262,9 +259,6 @@ au BufNewFile,BufRead *.rs  setf rust
 au BufNewFile,BufRead *.tex set encoding=utf-8
 au BufNewFile,BufRead *.rb set shiftwidth=2
 au BufNewFile,BufRead {M,m}akefile set noexpandtab
-
-" Delete ~/.vim/.netrwhist file after generation
-au VimLeave * if filereadable("~/.vim/.netrwhist") | call delete("~/.vim/.netrwhist") | endif 
 
 " NEOCOMPLCACHE settings
 " Disable AutoComplPop.
