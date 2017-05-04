@@ -111,8 +111,10 @@ filetype plugin indent on
 """""""""
 " set tagbar shortcut
 nmap <F8> :TagbarToggle<CR>
+
 "set colorscheme
 colorscheme vividchalk
+
 " pour que l'indentation avec tab soit la même qu'avec les chevrons
 set shiftwidth=4        "indentation = N cases
 set smarttab            "chevrons équivalent à la touche tab
