@@ -179,7 +179,7 @@ let g:vimfiler_as_default_explorer = 1
 
 " For multiple cursors :
 let g:multi_cursor_exit_from_insert_mode = 0 " don't quit with escape in insert mode
-let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_next_key=<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
@@ -228,12 +228,6 @@ let mapleader = ","
 "Abbréviations d'ordre générales
 ab actual source ~/.vimrc
 ab tq tabclose
-
-" déplacement haut-bas
-noremap <S-s> 50k
-noremap <S-t> 50j
-noremap <S-up> 50k
-noremap <S-down> 50j
 
 " Fx assigns
 noremap <F1> :TlistToggle<cr> 
