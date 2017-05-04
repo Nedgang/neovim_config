@@ -184,10 +184,6 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
-" Unite
-nnoremap <C-f> :Unite file_rec/async<cr>
-nnoremap <space>/ :Unite grep:.<cr>
-
 " Syntastic setup
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
