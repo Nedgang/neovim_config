@@ -46,10 +46,6 @@ endif
 		Plug 'terryma/vim-multiple-cursors'
         " complementation (synergies: vimshell, unite)
 		Plug 'Shougo/neocomplcache.vim'
-        " syntax checker
-                "Plug 'scrooloose/syntastic'
-        " complete abbreviations and research
-                Plug 'tpope/vim-abolish'
         " vim bookmarks
 		Plug 'MattesGroeger/vim-bookmarks'
         " snippets (synergies: neocomplcache)
@@ -165,24 +161,6 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
-
-" Syntastic setup
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['pylint']
-" error in source code highlighted in blue
-highlight SyntasticError        ctermbg=blue ctermfg=NONE
-highlight SyntasticWarning      ctermbg=blue ctermfg=NONE
-" sign in sign column are in red and yellow
-highlight SyntasticErrorSign    cterm=bold ctermbg=NONE ctermfg=red
-highlight SyntasticWarningSign  ctermbg=NONE ctermfg=yellow
-" current line in error buffer is highlighted in blue
-highlight Search                ctermbg=blue ctermfg=NONE
 
 " Snippets
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
