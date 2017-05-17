@@ -64,8 +64,6 @@ endif
         " powerful finder of whatever you want
 		Plug 'Shougo/unite.vim'
                 Plug 'bronson/vim-visual-star-search'
-        " Terminal in vim (need Unite)
-		Plug 'Shougo/vimshell.vim'
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
