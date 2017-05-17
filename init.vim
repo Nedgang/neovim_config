@@ -34,8 +34,6 @@ endif
 " features
         " liste des fonctions/variables
 		Plug 'vim-scripts/taglist.vim'
-        " powerful file explorator (need unite)
-		Plug 'Shougo/vimfiler.vim'
         " commenter des portions de code à la volée
 		Plug 'aluriak/nerdcommenter'
         " lines of same indentation as text objects
