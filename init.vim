@@ -59,11 +59,6 @@ endif
                 Plug 'tpope/vim-abolish'
         " . repeat whole maps
 		Plug 'tpope/vim-repeat'
-        " necessary for efficiency Unite, with options for automatize compilation
-		Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-        " powerful finder of whatever you want
-		Plug 'Shougo/unite.vim'
-                Plug 'bronson/vim-visual-star-search'
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
