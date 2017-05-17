@@ -66,8 +66,6 @@ endif
                 Plug 'bronson/vim-visual-star-search'
         " Terminal in vim (need Unite)
 		Plug 'Shougo/vimshell.vim'
-        " dates management
-                Plug 'tpope/vim-speeddating'
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
