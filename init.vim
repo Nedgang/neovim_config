@@ -40,7 +40,10 @@ endif
                 Plug 'michaeljsmith/vim-indent-object'
         " multiple line insertion
 		Plug 'terryma/vim-multiple-cursors'
-        " complementation (synergies: vimshell, unite)
+        " vim snippets
+                Plug 'Shougo/neosnippet'
+                Plug 'Shougo/neosnippet-snippets'
+        " complementation (synergies: neosnippet)
                 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
                 let g:deoplete#enable_at_startup = 1
         " vim bookmarks
@@ -54,9 +57,7 @@ endif
                 Plug 'vim-airline/vim-airline-themes'
         " vim tabularize
                 Plug 'godlygeek/tabular'
-        " vim snippets
-                Plug 'Shougo/neosnippet'
-                Plug 'Shougo/neosnippet-snippets'
+
         " vim indent guides
                 Plug 'Yggdroot/indentLine' 
         " git support: commit in vim + gitconfig indent and syntax
