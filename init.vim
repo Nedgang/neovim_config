@@ -45,7 +45,7 @@ endif
         " multiple line insertion
 		Plug 'terryma/vim-multiple-cursors'
         " complementation (synergies: vimshell, unite)
-		Plug 'Shougo/neocomplcache.vim'
+		Plug 'Shougo/neocomplete.vim'
         " vim bookmarks
 		Plug 'MattesGroeger/vim-bookmarks'
         " snippets (synergies: neocomplcache)
