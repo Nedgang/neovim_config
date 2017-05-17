@@ -1,8 +1,3 @@
-if has('vim_starting')
-    if &compatible
-        set nocompatible               " Be iMproved
-    endif
-
 " Required:
 call plug#begin('~/.config/nvim/bundle/')
 
