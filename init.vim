@@ -40,8 +40,6 @@ endif
 		Plug 'aluriak/nerdcommenter'
         " lines of same indentation as text objects
                 Plug 'michaeljsmith/vim-indent-object'
-        " support de git
-		Plug 'tpope/vim-fugitive'
         " multiple line insertion
 		Plug 'terryma/vim-multiple-cursors'
         " complementation (synergies: vimshell, unite)
