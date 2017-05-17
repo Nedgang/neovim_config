@@ -80,9 +80,6 @@ filetype plugin indent on
 """""""""
 " VIMRC "
 """""""""
-" set tagbar shortcut
-    nmap <F8> :TagbarToggle<CR>
-
 "set colorscheme
 colorscheme vividchalk
 
@@ -179,16 +176,10 @@ ab actual source ~/.vimrc
 ab tq tabclose
 
 " Fx assigns
-noremap <F1> :TlistToggle<cr>
-noremap <F2> :VimFilerBuffer<cr>
-noremap <F4> :VimShellTab<cr>
-noremap <F6> :Gstatus<cr>
-noremap <F7> :Gcommit<cr>
-noremap <F9> :VimShellInteractive make<cr>
-
-" NerdTree shortcut
-noremap <F3> :NERDTreeToggle<CR>
-
+noremap <F2> :Gstatus<cr>
+noremap <F3> :Gcommit<cr>
+noremap <F4> :NERDTreeToggle<CR>
+    nmap <F8> :TagbarToggle<CR>
 
 " paste (before|after) and leave cursor at the beginning 
 noremap œ P`[
