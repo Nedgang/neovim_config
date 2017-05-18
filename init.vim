@@ -66,6 +66,8 @@ endif
                 Plug 'majutsushi/tagbar'
         " nerdTree, activated on command
                 Plug 'scrooloose/nerdtree'
+        " Colors themes
+                Plug 'flazz/vim-colorschemes'
 
 " Configuration indent line
 let g:indentLine_char = '|'
