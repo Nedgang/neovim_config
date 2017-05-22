@@ -125,15 +125,14 @@ cabbrev S Subvert
 nmap lr <Plug>Coerce
 
 " Remap and shortcuts for vim-bookmarks
-nmap ®® <Plug>BookmarkToggle
-nmap ®i <Plug>BookmarkAnnotate
-nmap ®o <Plug>BookmarkAnnotate TODO<cr>
-nmap ®a <Plug>BookmarkShowAll
-nmap ®þ <Plug>BookmarkNext
-nmap ®ß <Plug>BookmarkPrev
-nmap ®c <Plug>BookmarkClear
-nmap ®d <Plug>BookmarkClear
-nmap ®x <Plug>BookmarkClearAll
+nmap te <Plug>BookmarkToggle
+nmap ti <Plug>BookmarkAnnotate
+nmap tt <Plug>BookmarkAnnotate TODO<cr>
+nmap ta <Plug>BookmarkShowAll
+nmap tn <Plug>BookmarkNext
+nmap tm <Plug>BookmarkPrev
+nmap ts <Plug>BookmarkClear
+nmap tc <Plug>BookmarkClearAll
 
 "Enables line centering when jumping to bookmark
 let g:bookmark_center = 1
