@@ -15,6 +15,7 @@ endif
                 Plug 'aluriak/asp.vim'
         " Rust support
                 Plug 'rust-lang/rust.vim'
+                Plug 'racer-rust/vim-racer'
         " markdown support
                 Plug 'tpope/vim-markdown'
         " python
