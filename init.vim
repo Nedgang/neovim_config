@@ -11,14 +11,10 @@ endif
 " Refer to |:Plug-examples|.
 
 " Languages forge
-        " prolog support
-		Plug 'mndrix/prolog.vim'
         " ASP support
                 Plug 'aluriak/asp.vim'
         " Rust support
                 Plug 'rust-lang/rust.vim'
-        " TOML support
-                Plug 'cespare/vim-toml'
         " markdown support
                 Plug 'tpope/vim-markdown'
         " python
