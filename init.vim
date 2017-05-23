@@ -36,6 +36,8 @@ endfunction
                 Plug 'Omer/vim-sparql'
         " Snakemake
                 Plug 'ibab/vim-snakemake'
+        " JSON
+                Plug 'elzr/vim-json', { 'for': 'json' }
 " features
         " liste des fonctions/variables
 		Plug 'vim-scripts/taglist.vim'
