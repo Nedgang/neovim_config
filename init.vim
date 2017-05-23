@@ -29,9 +29,9 @@ function! BuildComposer(info)
 endfunction
                 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
         " python
-                Plug 'kh3phr3n/python-syntax'
-                let python_highlight_all = 1
-                Plug 'hynek/vim-python-pep8-indent'
+                Plug 'vim-python/python-syntax', { 'for': 'python' }
+                let g:python_highlight_all = 1
+                Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
         " SPARQL
                 Plug 'Omer/vim-sparql'
         " Snakemake
