@@ -189,10 +189,6 @@ noremap <F3> :Gcommit<cr>
 noremap <F4> :NERDTreeToggle<CR>
     nmap <F8> :TagbarToggle<CR>
 
-" paste (before|after) and leave cursor at the beginning 
-noremap œ P`[
-noremap Œ p`[
-
 " Modif selon type de fichier
 filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
 syntax on                       "affichage des couleurs
