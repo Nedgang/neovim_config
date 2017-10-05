@@ -16,6 +16,8 @@ endif
         " Rust support
                 Plug 'rust-lang/rust.vim'
                 Plug 'racer-rust/vim-racer'
+        " tmux config support
+                Plug 'tmux-plugins/vim-tmux'
         " markdown support
                 Plug 'tpope/vim-markdown'
 function! BuildComposer(info)
