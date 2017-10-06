@@ -56,9 +56,7 @@ endfunction
                 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
                 let g:deoplete#enable_at_startup = 1
                 Plug 'zchee/deoplete-jedi'
-                Plug 'Shougo/neoinclude.vim'
                 Plug 'Shougo/echodoc.vim'
-                Plug 'Shougo/neopairs.vim'
         " vim bookmarks
 		Plug 'MattesGroeger/vim-bookmarks'
         " subvertion with {} and coercition
