@@ -56,7 +56,6 @@ endfunction
                 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
                 let g:deoplete#enable_at_startup = 1
                 Plug 'zchee/deoplete-jedi'
-                Plug 'zchee/deoplete-zsh'
                 Plug 'Shougo/neoinclude.vim'
                 Plug 'Shougo/echodoc.vim'
                 Plug 'Shougo/neopairs.vim'
@@ -229,3 +228,5 @@ augroup vimrc_autocmds
         autocmd FileType rust match Excess /\%80v.*/
         autocmd FileType rust set nowrap
 augroup END
+
+let g:python3_host_prog="/usr/bin/python3"
