@@ -58,8 +58,6 @@ endfunction
                 Plug 'zchee/deoplete-jedi'
                 Plug 'roxma/nvim-yarp'
                 Plug 'roxma/vim-hug-neovim-rpc'
-        " . repeat whole maps
-		Plug 'tpope/vim-repeat'
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
