@@ -41,8 +41,6 @@ endfunction
         " JSON
                 Plug 'elzr/vim-json', { 'for': 'json' }
 " features
-        " liste des fonctions/variables
-		Plug 'vim-scripts/taglist.vim'
         " commenter des portions de code à la volée
 		Plug 'aluriak/nerdcommenter'
         " lines of same indentation as text objects
