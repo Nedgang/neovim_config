@@ -58,8 +58,6 @@ endfunction
                 Plug 'zchee/deoplete-jedi'
                 Plug 'roxma/nvim-yarp'
                 Plug 'roxma/vim-hug-neovim-rpc'
-        " subvertion with {} and coercition
-                Plug 'tpope/vim-abolish'
         " . repeat whole maps
 		Plug 'tpope/vim-repeat'
         " coloured and efficient HUI
