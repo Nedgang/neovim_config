@@ -58,8 +58,6 @@ endfunction
                 Plug 'zchee/deoplete-jedi'
                 Plug 'roxma/nvim-yarp'
                 Plug 'roxma/vim-hug-neovim-rpc'
-        " vim bookmarks
-		Plug 'MattesGroeger/vim-bookmarks'
         " subvertion with {} and coercition
                 Plug 'tpope/vim-abolish'
         " . repeat whole maps
@@ -69,7 +67,6 @@ endfunction
                 Plug 'vim-airline/vim-airline-themes'
         " vim tabularize
                 Plug 'godlygeek/tabular'
-
         " vim indent guides
                 Plug 'Yggdroot/indentLine' 
         " git support: commit in vim + gitconfig indent and syntax
@@ -140,22 +137,6 @@ set sessionoptions=blank,buffers,sesdir,winpos,folds,help,tabpages,winsize
 " Abolish
 cabbrev S Subvert
 nmap lr <Plug>Coerce
-
-" Remap and shortcuts for vim-bookmarks
-nmap te <Plug>BookmarkToggle
-nmap ti <Plug>BookmarkAnnotate
-nmap tt <Plug>BookmarkAnnotate TODO<cr>
-nmap ta <Plug>BookmarkShowAll
-nmap tn <Plug>BookmarkNext
-nmap tm <Plug>BookmarkPrev
-nmap ts <Plug>BookmarkClear
-nmap tc <Plug>BookmarkClearAll
-
-"Enables line centering when jumping to bookmark
-let g:bookmark_center = 1
-"color of sign column
-highlight SignColumn ctermbg=NONE
-highlight BookmarkSign ctermbg=NONE ctermfg=LightGreen
 
 " vimfiler module definitions
 let g:vimfiler_as_default_explorer = 1
