@@ -13,9 +13,6 @@ endif
 " Languages forge
         " ASP support
                 Plug 'aluriak/asp.vim'
-        " Rust support
-                Plug 'rust-lang/rust.vim'
-                Plug 'racer-rust/vim-racer'
         " tmux config support
                 Plug 'tmux-plugins/vim-tmux'
         " markdown support
@@ -63,10 +60,6 @@ endfunction
                 Plug 'tpope/vim-fugitive'
                 Plug 'tpope/vim-git'
                 Plug 'airblade/vim-gitgutter'
-        " tagbar
-                Plug 'majutsushi/tagbar'
-        " nerdTree, activated on command
-                Plug 'scrooloose/nerdtree'
         " Colors themes
                 Plug 'flazz/vim-colorschemes'
         " Rainbow csv
@@ -164,12 +157,6 @@ let mapleader = ","
 "Abbréviations d'ordre générales
 ab actual source ~/.vimrc
 ab tq tabclose
-
-" Fx assigns
-noremap <F2> :Gstatus<cr>
-noremap <F3> :Gcommit<cr>
-noremap <F4> :NERDTreeToggle<CR>
-    nmap <F8> :TagbarToggle<CR>
 
 " Modif selon type de fichier
 filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
