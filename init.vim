@@ -34,10 +34,6 @@ endfunction
                 Plug 'vim-python/python-syntax', { 'for': 'python' }
                 let g:python_highlight_all = 1
                 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
-        " SPARQL
-                Plug 'Omer/vim-sparql'
-        " Snakemake
-                Plug 'ibab/vim-snakemake'
         " JSON
                 Plug 'elzr/vim-json', { 'for': 'json' }
 " features
