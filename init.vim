@@ -73,6 +73,8 @@ endfunction
                 Plug 'scrooloose/nerdtree'
         " Colors themes
                 Plug 'flazz/vim-colorschemes'
+        " Rainbow csv
+                Plug 'mechatroner/rainbow_csv'
 
 " Configuration indent line
 let g:indentLine_char = '|'
