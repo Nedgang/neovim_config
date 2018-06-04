@@ -75,6 +75,8 @@ endfunction
                 Plug 'flazz/vim-colorschemes'
         " Rainbow csv
                 Plug 'mechatroner/rainbow_csv'
+        " Black format for python
+                Plug 'ambv/black'
 
 " Configuration indent line
 let g:indentLine_char = '|'
