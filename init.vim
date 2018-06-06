@@ -52,8 +52,6 @@ endfunction
         " coloured and efficient HUI
                 Plug 'bling/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
-        " vim tabularize
-                Plug 'godlygeek/tabular'
         " vim indent guides
                 Plug 'Yggdroot/indentLine' 
         " git support: commit in vim + gitconfig indent and syntax
