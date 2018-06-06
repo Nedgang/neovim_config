@@ -35,7 +35,7 @@ endfunction
                 Plug 'elzr/vim-json', { 'for': 'json' }
 " features
         " commenter des portions de code à la volée
-		Plug 'aluriak/nerdcommenter'
+		Plug 'scrooloose/nerdcommenter'
         " lines of same indentation as text objects
                 Plug 'michaeljsmith/vim-indent-object'
         " multiple line insertion
