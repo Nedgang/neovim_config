@@ -137,9 +137,9 @@ let g:multi_cursor_skip_key='<C-h>'
 let g:multi_cursor_quit_key='<Esc>'
 
 " Snippets
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <C-c>     <Plug>(neosnippet_expand_or_jump)
+smap <C-c>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-c>     <Plug>(neosnippet_expand_target)
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
                         \ "\<Plug>(neosnippet_expand_or_jump)"
