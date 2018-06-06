@@ -146,7 +146,7 @@ ab tq tabclose
 ab tn tabnew
 
 " Modif selon type de fichier
-"syntax on                       "affichage des couleurs
+syntax on                       "affichage des couleurs
 au BufNewFile,BufRead *.pde setf arduino
 au BufNewFile,BufRead *.mkd setf mkd
 au BufNewFile,BufRead *.adb setf ada*/
