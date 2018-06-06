@@ -119,13 +119,6 @@ set t_Co=256
 " local and global mappings/options.
 set sessionoptions=blank,buffers,sesdir,winpos,folds,help,tabpages,winsize
 
-" Abolish
-cabbrev S Subvert
-nmap lr <Plug>Coerce
-
-" vimfiler module definitions
-let g:vimfiler_as_default_explorer = 1
-
 " For multiple cursors :
 let g:multi_cursor_exit_from_insert_mode = 0 " don't quit with escape in insert mode
 let g:multi_cursor_start_word_key='<C-q>'
