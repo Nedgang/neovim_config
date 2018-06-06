@@ -1,13 +1,7 @@
 " Required:
 call plug#begin('~/.config/nvim/bundle/')
 
-" Live actualisation
-if has("autocmd")
-    autocmd! bufwritepost .vimrc source ~/.vimrc
-endif
-
-
-" MY BUNDLES HERE :
+" PLUGINS:
 " Refer to |:Plug-examples|.
 
 " Languages forge
@@ -69,11 +63,6 @@ endfunction
 let g:indentLine_char = '|'
 
 call plug#end()
-
-" Required:
-filetype plugin indent on
-
-" vimrc begin here
 
 """""""""
 " VIMRC "
@@ -149,9 +138,9 @@ let mapleader = ","
 "Abbréviations d'ordre générales
 ab actual source ~/.vimrc
 ab tq tabclose
+ab tn tabnew
 
 " Modif selon type de fichier
-filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
 syntax on                       "affichage des couleurs
 au BufNewFile,BufRead *.pde setf arduino
 au BufNewFile,BufRead *.mkd setf mkd
@@ -177,9 +166,6 @@ augroup vimrc_autocmds
         autocmd FileType python highlight Excess guibg=Green ctermbg=Grey
         autocmd FileType python match Excess /\%89v.*/
         autocmd FileType python set nowrap
-        autocmd FileType rust highlight Excess guibg=Green ctermbg=Grey
-        autocmd FileType rust match Excess /\%89v.*/
-        autocmd FileType rust set nowrap
 augroup END
 
 let g:python3_host_prog="/usr/bin/python3"
