@@ -1,7 +1,7 @@
 " Required:
 call plug#begin('~/.config/nvim/bundle/')
 
-" PLUGINS:
+" Plugins:
 " Refer to |:Plug-examples|.
 
 " Languages forge
@@ -29,7 +29,7 @@ endfunction
                 Plug 'elzr/vim-json', { 'for': 'json' }
 " features
         " commenter des portions de code à la volée
-		Plug 'scrooloose/nerdcommenter'
+                Plug 'scrooloose/nerdcommenter'
         " lines of same indentation as text objects
                 Plug 'michaeljsmith/vim-indent-object'
         " multiple line insertion
@@ -63,6 +63,11 @@ endfunction
 let g:indentLine_char = '|'
 
 call plug#end()
+
+" Required:
+filetype plugin indent on
+
+" vimrc begin here
 
 """""""""
 " VIMRC "
@@ -141,6 +146,7 @@ ab tq tabclose
 ab tn tabnew
 
 " Modif selon type de fichier
+filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
 syntax on                       "affichage des couleurs
 au BufNewFile,BufRead *.pde setf arduino
 au BufNewFile,BufRead *.mkd setf mkd
@@ -154,7 +160,9 @@ au BufNewFile,BufRead {M,m}akefile set noexpandtab
 
 
 " Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
