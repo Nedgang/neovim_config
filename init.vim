@@ -146,8 +146,7 @@ ab tq tabclose
 ab tn tabnew
 
 " Modif selon type de fichier
-filetype plugin indent on       "Indentation selon extension de fichier (nécessaire pour vundle)
-syntax on                       "affichage des couleurs
+"syntax on                       "affichage des couleurs
 au BufNewFile,BufRead *.pde setf arduino
 au BufNewFile,BufRead *.mkd setf mkd
 au BufNewFile,BufRead *.adb setf ada*/
@@ -157,10 +156,6 @@ au BufNewFile,BufRead *.rs  setf rust
 au BufNewFile,BufRead *.tex set encoding=utf-8
 au BufNewFile,BufRead *.rb set shiftwidth=2
 au BufNewFile,BufRead {M,m}akefile set noexpandtab
-
-" Enable omni completion.
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 
 " Highlight carac past column 80
 augroup vimrc_autocmds
