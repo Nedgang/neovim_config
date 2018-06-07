@@ -54,10 +54,11 @@ endfunction
                 Plug 'airblade/vim-gitgutter'
         " Colors themes
                 Plug 'flazz/vim-colorschemes'
-        " Rainbow csv
-                Plug 'mechatroner/rainbow_csv'
         " Black format for python
                 Plug 'ambv/black'
+        " CSV plugin
+                Plug 'chrisbra/csv.vim'
+                let g:csv_no_conceal = 1
 
 " Configuration indent line
 let g:indentLine_char = '|'
