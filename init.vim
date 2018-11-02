@@ -11,16 +11,6 @@ call plug#begin('~/.config/nvim/bundle/')
                 Plug 'tmux-plugins/vim-tmux'
         " markdown support
                 Plug 'tpope/vim-markdown'
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    if has('nvim')
-      !cargo build --release
-    else
-      !cargo build --release --no-default-features --features json-rpc
-    endif
-  endif
-endfunction
-                Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
         " python
                 Plug 'vim-python/python-syntax', { 'for': 'python' }
                 let g:python_highlight_all = 1
